@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="345.0" prefWidth="415.0">
+         <children>
+            <Label layoutX="168.0" layoutY="14.0" text="CALORIE CALCULATOR" />
+            <VBox layoutX="229.0" layoutY="55.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="ageInput" />
+                  <TextField fx:id="weightInput" />
+                  <TextField fx:id="heightInput" />
+                  <ChoiceBox fx:id="genderInput" />
+                  <ChoiceBox fx:id="activityLevelInput" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="68.0" layoutY="55.0" spacing="20.0">
+               <children>
+                  <Label text="Enter Age" />
+                  <Label text="Enter Weight" />
+                  <Label text="Enter Height" />
+                  <Label text="Enter Gender" />
+                  <Label text="Enter Activity Level" />
+               </children>
+            </VBox>
+            <TextArea fx:id="resultTextArea" layoutY="289.0" prefHeight="112.0" prefWidth="478.0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </TextArea>
+            <Button fx:id="calculateButton" layoutX="64.0" layoutY="243.0" mnemonicParsing="false" onAction="#calculateButtonClicked" prefHeight="25.0" prefWidth="317.0" text="Calculate" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
